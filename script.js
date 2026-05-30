@@ -241,14 +241,6 @@ function loadSlideImages(index) {
     loadedSlides.add(index);
 }
 
-function goToSlide(index) {
-    currentIndex = index;
-    track.style.transform = `translateX(-${index * 100}vw)`;
-    dots.forEach((d, i) => d.classList.toggle('active', i === index));
-    loadSlideImages(index);
-    updateArrows();
-}
-
 // Load first slide immediately
 loadSlideImages(0);
 
@@ -256,6 +248,7 @@ function goToSlide(index) {
     currentIndex = index;
     track.style.transform = `translateX(-${index * 100}vw)`;
     dots.forEach((d, i) => d.classList.toggle('active', i === index));
+    loadSlideImages(index);
     updateArrows();
 }
 
