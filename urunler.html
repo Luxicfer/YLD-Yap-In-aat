@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YLD YAPI ürünleri - Çimento, demir, tuğla, kiremit, yalıtım malzemeleri ve boya çeşitleri.">
+    <meta property="og:title" content="Ürünlerimiz | YLD YAPI">
+    <meta property="og:description" content="YLD YAPI inşaat malzemeleri ürün grubu.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="resimler/logo.png">
+    <link rel="icon" type="image/png" href="resimler/logo.png">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <script>
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-CNSS5BG22V';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-CNSS5BG22V');
+        });
+    </script>
+    <title data-i18n="title-products">Ürünlerimiz | YLD YAPI</title>
+    <link rel="preload" as="style" href="style.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skip-label">İçeriğe geç</a>
+
+    <header>
+        <div class="logo"><a href="index.html"><img src="resimler/logo.png" alt="YLD YAPI Logo"></a></div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html"><span class="nav-text" data-i18n="nav-home">Anasayfa</span></a></li>
+                <li><a href="urunler.html"><span class="nav-text" data-i18n="nav-products">Ürünler</span></a></li>
+                <li><a href="hakkimizda.html"><span class="nav-text" data-i18n="nav-about">Hakkımızda</span></a></li>
+                <li><a href="iletisim.html"><span class="nav-text" data-i18n="nav-contact">İletişim</span></a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <main id="main-content" class="container">
+        <h2 data-i18n="products-title">Ürünlerimiz</h2>
+        <div class="product-grid">
+            <a href="iletisim.html?urun=%C3%87imento" class="product-link">
+                <article class="product-card">
+                    <div class="product-img" style="background-image: url('resimler/resim1.webp')"></div>
+                    <h3 data-i18n="cimento">Çimento</h3>
+                    <p data-i18n="cimento-desc">Yüksek dayanımlı çimento çeşitleri.</p>
+                </article>
+            </a>
+            <a href="iletisim.html?urun=Demir" class="product-link">
+                <article class="product-card">
+                    <div class="product-img" style="background-image: url('resimler/resim2.webp')"></div>
+                    <h3 data-i18n="demir">Demir</h3>
+                    <p data-i18n="demir-desc">İnşaat demiri ve donatı çeşitleri.</p>
+                </article>
+            </a>
+            <a href="iletisim.html?urun=Tu%C4%9Fla+%26+Kiremit" class="product-link">
+                <article class="product-card">
+                    <div class="product-img" style="background-image: url('resimler/resim9.webp')"></div>
+                    <h3 data-i18n="tugla-kiremit">Tuğla &amp; Kiremit</h3>
+                    <p data-i18n="tugla-kiremit-desc">Her boyutta tuğla ve kiremit.</p>
+                </article>
+            </a>
+            <a href="iletisim.html?urun=Yal%C4%B1t%C4%B1m+Malzemeleri" class="product-link">
+                <article class="product-card">
+                    <div class="product-img" style="background-image: url('resimler/resim8.webp')"></div>
+                    <h3 data-i18n="yalitim">Yalıtım Malzemeleri</h3>
+                    <p data-i18n="yalitim-desc">Isı ve su yalıtım ürünleri.</p>
+                </article>
+            </a>
+            <a href="iletisim.html?urun=Boya" class="product-link">
+                <article class="product-card">
+                    <div class="product-img" style="background-image: url('resimler/resim7.webp')"></div>
+                    <h3 data-i18n="boya">Boya</h3>
+                    <p data-i18n="boya-desc">İç cephe ve dış cephe boyaları.</p>
+                </article>
+            </a>
+        </div>
+        <div class="contact-link-bottom">
+            <a href="iletisim.html">
+                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                <span data-i18n="contact-bottom">Başka Ürün Siparişi İçin İletişim Kısmına Gidebilirsiniz</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <button id="dark-mode-toggle" class="mode-btn" aria-label="Tema">🌙</button>
+        <p data-i18n="footer-text">2026 YLD YAPI &copy; Tüm Hakları Saklıdır.</p>
+        <select id="lang-toggle" class="lang-select" aria-label="Dil seçimi">
+            <option value="tr">TR</option>
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+            <option value="de">DE</option>
+            <option value="ru">RU</option>
+        </select>
+    </footer>
+
+    <script src="script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yıldırım İnşaat Malzemeleri - 1969'dan beri Eskişehir'de çimento, demir, tuğla, kiremit, yalıtım ve boya ürünleri. Profesyonel inşaat malzemeleri tedariği.">
+    <meta property="og:title" content="YLD YAPI | Profesyonel İnşaat">
+    <meta property="og:description" content="Yıldırım İnşaat Malzemeleri - 1969'dan beri Eskişehir'de inşaat malzemeleri tedariği.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="resimler/logo.png">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,sans-serif;background:#f8f9fa;color:#1a1a2e;min-height:100vh;display:flex;flex-direction:column}
+        header{background:#0f1a54;color:white;padding:0 10%;display:flex;align-items:center;justify-content:space-between;height:70px;position:sticky;top:0;z-index:100}
+        .logo img{height:50px;width:auto}
+        .hero{position:relative;height:90vh;overflow:hidden;color:white}
+        .slider-track{display:flex;width:300vw;height:100%;transition:transform 0.6s cubic-bezier(0.22,0.61,0.36,1);cursor:grab}
+        .slider-item{width:100vw;height:100%;position:relative;flex-shrink:0;user-select:none}
+        .slide-images{display:grid;grid-template-columns:repeat(3,1fr);width:100%;height:100%}
+        .slide-img{background-size:cover;background-position:center;min-height:200px}
+        .slide-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.5)}
+        .slide-text{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2}
+        .slide-text h1{font-size:5rem;text-align:center;font-style:italic;font-weight:700;color:white}
+        .skip-link{position:absolute;left:-9999px;z-index:999;background:#0f1a54;color:white;padding:8px 16px}
+        .skip-link:focus{left:8px;top:8px}
+        .main-nav ul{display:flex;list-style:none;gap:32px;align-items:center}
+        .main-nav a{color:white;text-decoration:none;font-size:1rem;font-weight:600;display:flex;align-items:center;gap:8px}
+        .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+        .hamburger span{width:28px;height:3px;background:white;border-radius:2px;display:block}
+        .btn-container{position:absolute;bottom:80px;left:50%;transform:translateX(-50%);z-index:5}
+        .btn{display:inline-block;padding:12px 28px;background:white;color:#0f1a54;text-decoration:none;font-weight:700;border-radius:6px;font-size:1rem;min-height:44px;line-height:1.2}
+        .slider-dots{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:flex;gap:12px;z-index:5}
+        .dot{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;border:2px solid transparent;min-width:44px;min-height:44px;background-clip:content-box;padding:12px}
+        .dot.active{background:white;border-color:white}
+        .arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:rgba(0,0,0,0.5);color:white;border:none;font-size:2rem;cursor:pointer;padding:8px 12px;border-radius:4px;min-width:44px;min-height:44px}
+        .arrow-prev{left:10px}
+        .arrow-next{right:10px}
+        .hidden{display:none}
+        .slider-item::after{content:"";position:absolute;bottom:20px;right:20px;width:120px;height:50px;background:url('resimler/logo.png') no-repeat center/contain;z-index:3;pointer-events:none}
+        footer{background:#0f1a54;color:white;text-align:center;padding:12px 10%;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+        .mode-btn{background:none;border:2px solid white;color:white;border-radius:50%;width:44px;height:44px;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+        .lang-select{background:white;color:#0f1a54;border:1px solid #ccc;border-radius:4px;padding:8px 28px 8px 12px;min-width:72px;min-height:44px;font-weight:600;appearance:none;-webkit-appearance:none;cursor:pointer}
+        .container{padding:4rem 10%}
+        .container h2{text-align:center;margin-bottom:2.5rem;font-size:2.2rem;font-weight:800;color:#0f1a54}
+        .nav-text{font-size:1rem}
+        @media(max-width:768px){.main-nav li+li{margin-left:40px}.main-nav li+li::before{left:-22px;height:1.5rem}.slide-img{height:calc(100vh - 130px);min-height:50vh}}
+        @media(max-width:480px){.slide-img{height:calc(100vh - 130px);min-height:40vh}}
+    </style>
+    <link rel="icon" type="image/png" href="resimler/logo.png">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preload" as="image" href="resimler/resim1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="resimler/resim2.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="resimler/resim3.webp" fetchpriority="high">
+    <script>
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-CNSS5BG22V';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-CNSS5BG22V');
+        });
+    </script>
+    <title data-i18n="title-home">YLD YAPI | Profesyonel İnşaat</title>
+    <link rel="preload" as="style" href="style.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skip-label">İçeriğe geç</a>
+
+    <header>
+        <div class="logo"><a href="index.html"><img src="resimler/logo.png" alt="YLD YAPI Logo"></a></div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html"><span class="nav-text" data-i18n="nav-home">Anasayfa</span></a></li>
+                <li><a href="urunler.html"><span class="nav-text" data-i18n="nav-products">Ürünler</span></a></li>
+                <li><a href="hakkimizda.html"><span class="nav-text" data-i18n="nav-about">Hakkımızda</span></a></li>
+                <li><a href="iletisim.html"><span class="nav-text" data-i18n="nav-contact">İletişim</span></a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <main id="main-content">
+        <section id="anasayfa" class="hero">
+            <div class="slider-track">
+                <div class="slider-item">
+                    <div class="slide-images">
+                        <div class="slide-img" data-src="resimler/resim1.webp"></div>
+                        <div class="slide-img" data-src="resimler/resim2.webp"></div>
+                        <div class="slide-img" data-src="resimler/resim3.webp"></div>
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-text">
+                        <h1 data-i18n="slide-1">Sağlam Temeller</h1>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slide-images">
+                        <div class="slide-img" data-src="resimler/resim4.webp"></div>
+                        <div class="slide-img" data-src="resimler/resim5.webp"></div>
+                        <div class="slide-img" data-src="resimler/resim6.webp"></div>
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-text">
+                        <h1 data-i18n="slide-2">Güvenilir Yapılar</h1>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="slide-images">
+                        <div class="slide-img" data-src="resimler/resim7.webp"></div>
+                        <div class="slide-img" data-src="resimler/resim8.webp"></div>
+                        <div class="slide-img" data-src="resimler/resim9.webp"></div>
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="slide-text">
+                        <h1 data-i18n="slide-3">1969'dan Beri Güven</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow arrow-prev" id="prevBtn" aria-label="Önceki slayt">&#10094;</button>
+            <button class="arrow arrow-next" id="nextBtn" aria-label="Sonraki slayt">&#10095;</button>
+            <div class="btn-container">
+                <a href="urunler.html" class="btn" data-i18n="btn-products">Ürünleri İncele</a>
+            </div>
+            <div class="slider-dots" role="tablist" aria-label="Slayt navigasyonu">
+                <span class="dot active" data-index="0" role="tab" aria-label="Slayt 1" tabindex="0"></span>
+                <span class="dot" data-index="1" role="tab" aria-label="Slayt 2" tabindex="0"></span>
+                <span class="dot" data-index="2" role="tab" aria-label="Slayt 3" tabindex="0"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <button id="dark-mode-toggle" class="mode-btn" aria-label="Tema">🌙</button>
+        <p data-i18n="footer-text">2026 YLD YAPI &copy; Tüm Hakları Saklıdır.</p>
+        <select id="lang-toggle" class="lang-select" aria-label="Dil seçimi">
+            <option value="tr">TR</option>
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+            <option value="de">DE</option>
+            <option value="ru">RU</option>
+        </select>
+    </footer>
+
+    <script src="script.min.js"></script>
+</body>
+</html>

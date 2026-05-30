@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YLD YAPI iletişim - Eskişehir Odunpazarı'nda inşaat malzemeleri için bize ulaşın.">
+    <meta property="og:title" content="İletişim | YLD YAPI">
+    <meta property="og:description" content="YLD YAPI iletişim bilgileri ve sipariş hattı.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="resimler/logo.png">
+    <link rel="icon" type="image/png" href="resimler/logo.png">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <script>
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-CNSS5BG22V';
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-CNSS5BG22V');
+        });
+    </script>
+    <title data-i18n="title-contact">İletişim | YLD YAPI</title>
+    <link rel="preload" as="style" href="style.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skip-label">İçeriğe geç</a>
+
+    <header>
+        <div class="logo"><a href="index.html"><img src="resimler/logo.png" alt="YLD YAPI Logo"></a></div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html"><span class="nav-text" data-i18n="nav-home">Anasayfa</span></a></li>
+                <li><a href="urunler.html"><span class="nav-text" data-i18n="nav-products">Ürünler</span></a></li>
+                <li><a href="hakkimizda.html"><span class="nav-text" data-i18n="nav-about">Hakkımızda</span></a></li>
+                <li><a href="iletisim.html"><span class="nav-text" data-i18n="nav-contact">İletişim</span></a></li>
+            </ul>
+        </nav>
+
+        <button class="hamburger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <main id="main-content" class="container">
+        <h2 data-i18n="contact-title">İletişim</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <!-- KONUM HARİTA -->
+                <div class="map-box">
+                    <iframe src="https://maps.google.com/maps?q=Emek+Dilek+Cd+No:63+Odunpazar%C4%B1+Eski%C5%9Fehir&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="YLD YAPI Konum"></iframe>
+                </div>
+                <!-- KONUM İKONU -->
+                <a href="https://maps.google.com/?q=Emek+Dilek+Cd+No:63+Odunpazar%C4%B1+Eski%C5%9Fehir" target="_blank" class="address-link">
+                    <div class="address-text">
+                        <span class="location-icon">📍</span> <span data-i18n="contact-address">Emek, Dilek Cd. No:63, 26080 Odunpazarı/Eskişehir</span>
+                    </div>
+                </a>
+                <a href="mailto:Yldyapi@gmail.com" class="address-link">
+                    <div class="address-text">
+                        <span class="location-icon">✉️</span> Yldyapi@gmail.com
+                    </div>
+                </a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/xpqnnyaz" method="POST" class="contact-form">
+                    <input type="text" name="isim" placeholder="Adınız" required data-i18n-placeholder="contact-name">
+                    <input type="email" name="email" placeholder="E-posta" required data-i18n-placeholder="contact-email">
+                    <input type="tel" name="tel" placeholder="Tel No: (opsiyonel)" data-i18n-placeholder="contact-tel">
+                    <textarea name="mesaj" placeholder="Mesajınız" rows="5" required data-i18n-placeholder="contact-message"></textarea>
+                    <button type="submit" class="btn" data-i18n="contact-submit">Gönder</button>
+                </form>
+                <h3 data-i18n="contact-h3">Siparişleriniz için bize ulaşın</h3>
+                <ul>
+                    <li><strong>Abdullah Yıldırım:</strong> <a href="tel:+905366766567" class="phone-link">+90 536 676 65 67</a></li>
+                    <li><strong>Aydın Yıldırım:</strong> <a href="tel:+905366375616" class="phone-link">+90 536 637 56 16</a></li>
+                    <li><strong>Mehmet Sıtkı Özkaya:</strong> <a href="tel:+905336531126" class="phone-link">+90 533 653 11 26</a></li>
+                    <li><strong data-i18n="contact-email-label">E-posta:</strong> <a href="mailto:Yldyapi@gmail.com" class="phone-link">Yldyapi@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="whatsapp-section">
+            <p data-i18n="whatsapp-text">Bize WhatsApp'dan ulaşın</p>
+            <div class="whatsapp-links">
+                <a href="https://wa.me/905366766567" target="_blank" class="whatsapp-link">
+                    <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.035 0C5.413 0 .004 5.373.004 11.996c0 2.127.56 4.12 1.529 5.853L0 24l6.274-1.659a11.93 11.93 0 0 0 5.76 1.455c6.622 0 11.997-5.373 11.997-11.996C23.996 5.373 18.657 0 12.035 0zm0 21.816a9.876 9.876 0 0 1-5.06-1.396l-.362-.217-3.725.985 1-3.628-.235-.385a9.79 9.79 0 0 1-1.537-5.179c0-5.437 4.442-9.88 9.919-9.88 2.647 0 5.133 1.03 7 2.899a9.85 9.85 0 0 1 2.893 7.005c0 5.438-4.422 9.88-9.893 9.88zm5.408-7.463c-.296-.148-1.75-.863-2.022-.962-.27-.099-.467-.148-.663.148-.197.296-.765.962-.938 1.159-.172.198-.344.222-.64.074s-1.25-.461-2.38-1.468c-.88-.784-1.474-1.752-1.646-2.049-.172-.296-.019-.456.13-.603.133-.133.296-.345.444-.518.149-.172.198-.296.296-.494.099-.197.05-.37-.025-.518-.074-.148-.663-1.598-.909-2.188-.239-.573-.482-.495-.662-.505-.172-.01-.37-.011-.568-.011-.198 0-.518.074-.79.37-.27.296-1.034 1.011-1.034 2.466 0 1.455 1.058 2.861 1.207 3.058.148.198 2.084 3.18 5.047 4.459.705.305 1.255.487 1.684.624.708.226 1.352.194 1.861.118.567-.084 1.75-.715 1.996-1.405.247-.69.247-1.282.173-1.405-.074-.124-.27-.198-.567-.346z" fill="currentColor"/></svg>
+                    Abdullah Yıldırım
+                </a>
+                <a href="https://wa.me/905366375616" target="_blank" class="whatsapp-link">
+                    <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.035 0C5.413 0 .004 5.373.004 11.996c0 2.127.56 4.12 1.529 5.853L0 24l6.274-1.659a11.93 11.93 0 0 0 5.76 1.455c6.622 0 11.997-5.373 11.997-11.996C23.996 5.373 18.657 0 12.035 0zm0 21.816a9.876 9.876 0 0 1-5.06-1.396l-.362-.217-3.725.985 1-3.628-.235-.385a9.79 9.79 0 0 1-1.537-5.179c0-5.437 4.442-9.88 9.919-9.88 2.647 0 5.133 1.03 7 2.899a9.85 9.85 0 0 1 2.893 7.005c0 5.438-4.422 9.88-9.893 9.88zm5.408-7.463c-.296-.148-1.75-.863-2.022-.962-.27-.099-.467-.148-.663.148-.197.296-.765.962-.938 1.159-.172.198-.344.222-.64.074s-1.25-.461-2.38-1.468c-.88-.784-1.474-1.752-1.646-2.049-.172-.296-.019-.456.13-.603.133-.133.296-.345.444-.518.149-.172.198-.296.296-.494.099-.197.05-.37-.025-.518-.074-.148-.663-1.598-.909-2.188-.239-.573-.482-.495-.662-.505-.172-.01-.37-.011-.568-.011-.198 0-.518.074-.79.37-.27.296-1.034 1.011-1.034 2.466 0 1.455 1.058 2.861 1.207 3.058.148.198 2.084 3.18 5.047 4.459.705.305 1.255.487 1.684.624.708.226 1.352.194 1.861.118.567-.084 1.75-.715 1.996-1.405.247-.69.247-1.282.173-1.405-.074-.124-.27-.198-.567-.346z" fill="currentColor"/></svg>
+                    Aydın Yıldırım
+                </a>
+                <a href="https://wa.me/905336531126" target="_blank" class="whatsapp-link">
+                    <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.035 0C5.413 0 .004 5.373.004 11.996c0 2.127.56 4.12 1.529 5.853L0 24l6.274-1.659a11.93 11.93 0 0 0 5.76 1.455c6.622 0 11.997-5.373 11.997-11.996C23.996 5.373 18.657 0 12.035 0zm0 21.816a9.876 9.876 0 0 1-5.06-1.396l-.362-.217-3.725.985 1-3.628-.235-.385a9.79 9.79 0 0 1-1.537-5.179c0-5.437 4.442-9.88 9.919-9.88 2.647 0 5.133 1.03 7 2.899a9.85 9.85 0 0 1 2.893 7.005c0 5.438-4.422 9.88-9.893 9.88zm5.408-7.463c-.296-.148-1.75-.863-2.022-.962-.27-.099-.467-.148-.663.148-.197.296-.765.962-.938 1.159-.172.198-.344.222-.64.074s-1.25-.461-2.38-1.468c-.88-.784-1.474-1.752-1.646-2.049-.172-.296-.019-.456.13-.603.133-.133.296-.345.444-.518.149-.172.198-.296.296-.494.099-.197.05-.37-.025-.518-.074-.148-.663-1.598-.909-2.188-.239-.573-.482-.495-.662-.505-.172-.01-.37-.011-.568-.011-.198 0-.518.074-.79.37-.27.296-1.034 1.011-1.034 2.466 0 1.455 1.058 2.861 1.207 3.058.148.198 2.084 3.18 5.047 4.459.705.305 1.255.487 1.684.624.708.226 1.352.194 1.861.118.567-.084 1.75-.715 1.996-1.405.247-.69.247-1.282.173-1.405-.074-.124-.27-.198-.567-.346z" fill="currentColor"/></svg>
+                    Mehmet Sıtkı Özkaya
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <button id="dark-mode-toggle" class="mode-btn" aria-label="Tema">🌙</button>
+        <p data-i18n="footer-text">2026 YLD YAPI &copy; Tüm Hakları Saklıdır.</p>
+        <select id="lang-toggle" class="lang-select" aria-label="Dil seçimi">
+            <option value="tr">TR</option>
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+            <option value="de">DE</option>
+            <option value="ru">RU</option>
+        </select>
+    </footer>
+
+    <script src="script.min.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const urun = params.get('urun');
+        if (urun) {
+            document.querySelector('.contact-form textarea').value = 'Merhaba ' + urun + ' Sipariş Etmek İstiyorum.';
+        }
+    </script>
+</body>
+</html>
