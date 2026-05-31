@@ -20,7 +20,7 @@ body.dark-mode {
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
-body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-color); transition: 0.3s; }
+body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; transition: 0.3s; }
 main { display: block; min-height: calc(100vh - 130px); }
 
 @keyframes slideDown {
@@ -141,6 +141,7 @@ header.expanded .hamburger span:nth-child(3) { transform: rotate(-45deg) transla
 
 .container { padding: 4rem 10%; }
 .container h2 { text-align: center; margin-bottom: 2.5rem; font-size: 2.2rem; font-weight: 800; color: var(--accent-color); }
+.container p { line-height: 1.6; margin-bottom: 1rem; }
 .hero { position: relative; height: 90vh; overflow: hidden; color: white; }
 
 .slider-track {
