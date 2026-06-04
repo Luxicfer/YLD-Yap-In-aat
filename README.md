@@ -25,20 +25,34 @@ Yıldırım İnşaat Malzemeleri (YLD YAPI) için geliştirilmiş kurumsal tanı
 - Vercel (barındırma)
 ## Canlı Site
 https://yldyapi.vercel.app
+## AI Asistan Kullanımı
+Bu proje **OpenCode (Claude Code)** AI kod asistanı kullanılarak geliştirilmiştir.
+- Kod üretimi, hata ayıklama ve optimizasyon görevlerinde kullanıldı
+- Çoklu dil sistemi, slider, dark mode gibi JS bileşenlerinde yardım alındı
+- Responsive tasarım ve CSS düzenlemelerinde destek sağlandı
+- Lighthouse skor iyileştirmeleri AI ile yapıldı
+- Üretilen her kod satırı anlaşılarak projeye eklenmiştir
+- Kullanılan skill'ler: `frontend-design`, `web-design-guidelines`, `find-skills`
+
 ## Proje Yapısı
-├── index.html
-├── urunler.html
-├── hakkimizda.html
-├── iletisim.html
-├── style.css / style.min.css
-├── script.js / script.min.js
-├── vercel.json
+├── css/
+│   ├── style.css
+│   └── style.min.css
+├── js/
+│   ├── script.js
+│   └── script.min.js
+├── html/
+│   ├── index.html
+│   ├── urunler.html
+│   ├── hakkimizda.html
+│   └── iletisim.html
 ├── resimler/
 │   ├── logo.png
-│   ├── resim1.webp – resim9.webp
-├── ProjeRaporu.docx
+│   └── resim1.webp – resim9.webp
+├── vercel.json
+├── ProjeRaporu.pdf
 ├── mobillighthouse.pdf
-├── masaüstülighthouse.pdf
+├── masaustulighthouse.pdf
 └── README.md
 ## Lisans
 Bu proje eğitim amaçlıdır. Tüm hakları Yıldırım İnşaat Malzemeleri'ne aittir.
