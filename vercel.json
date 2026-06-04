@@ -1,8 +1,9 @@
 {
+  "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/html/index.html" },
-    { "source": "/hakkimizda", "destination": "/html/hakkimizda.html" },
-    { "source": "/iletisim", "destination": "/html/iletisim.html" },
-    { "source": "/urunler", "destination": "/html/urunler.html" }
+    { "source": "/", "destination": "/html/index" },
+    { "source": "/hakkimizda", "destination": "/html/hakkimizda" },
+    { "source": "/iletisim", "destination": "/html/iletisim" },
+    { "source": "/urunler", "destination": "/html/urunler" }
   ]
 }
