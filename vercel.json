@@ -1,9 +1,3 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/", "destination": "/html/index" },
-    { "source": "/hakkimizda", "destination": "/html/hakkimizda" },
-    { "source": "/iletisim", "destination": "/html/iletisim" },
-    { "source": "/urunler", "destination": "/html/urunler" }
-  ]
+  "cleanUrls": true
 }

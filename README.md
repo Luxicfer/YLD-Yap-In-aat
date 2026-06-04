@@ -41,14 +41,13 @@ Bu proje **OpenCode (Claude Code)** AI kod asistanı kullanılarak geliştirilmi
 ├── js/
 │   ├── script.js
 │   └── script.min.js
-├── html/
-│   ├── index.html
-│   ├── urunler.html
-│   ├── hakkimizda.html
-│   └── iletisim.html
 ├── resimler/
 │   ├── logo.png
 │   └── resim1.webp – resim9.webp
+├── index.html
+├── hakkimizda.html
+├── iletisim.html
+├── urunler.html
 ├── vercel.json
 ├── ProjeRaporu.pdf
 ├── mobillighthouse.pdf
